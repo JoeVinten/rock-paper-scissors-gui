@@ -1,0 +1,101 @@
+html, body {
+    background-color: #ffeead;
+    margin: 10px;
+    padding: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: white;
+}
+
+h1 {
+    font-size: 2em;
+    text-align: center;
+    color: black;
+}
+
+
+.container > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+}
+
+
+
+.container {
+    display: grid;
+    grid-template: 50px 300px 100px 100px / repeat(12, 1fr);
+    grid-gap: 5px;
+    margin: 0 auto;
+    max-width: 960px;;
+}
+
+.player {
+    background-color: #e94043;
+    grid-column: 1 / 7;
+}
+
+.cpu {
+    background-color: #e94043;
+    grid-column: 7 / -1;
+}
+
+
+
+#player-scoreboard {
+    background-color: black;
+    border: 5px solid #f6774f;
+    grid-column: 1 / 7;
+}
+
+#cpu-scoreboard {
+    background-color: black;
+    border: 5px solid #f6774f;
+    grid-column: 7 / -1;
+}
+
+#message{
+    background-color:#00897b;
+    grid-column-start: 1;
+    grid-column-end: -1;
+
+}
+
+
+
+#rock-div {
+    grid-column: 1 / 5;
+}
+
+#paper-div {
+    grid-column: 5 / 9;
+}
+
+#scissors-div {
+    grid-column: 9 / -1;
+
+}
+.choicesButton {
+    display: block;
+    height: 100%;
+    width: 100%;
+    background-color: #426FC5;
+    font-size: 75%;
+    overflow: hidde
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+    color: white;
+}
+
+
+
+.choicesButton:hover {
+    background-color: #e94043;
+    transition-duration: 1s;
+}
+
+
+
